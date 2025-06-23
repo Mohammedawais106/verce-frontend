@@ -7,18 +7,30 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependency folders
+node_modules/
+
+# Build output (Vite / React)
+dist/
+dist-ssr/
+
+# Environment variables
+.env
+.env.*
+
+# Local settings
 *.local
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# System files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# Vercel deployment folder
+.vercel/
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Test coverage
+coverage/

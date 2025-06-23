@@ -78,7 +78,15 @@ header p {
 @media (max-width: 1050px) {
   .hero {
     padding-left: 2.5rem;
+
+    background-image: url(/img3.jpg);
+    background-color: rgba(0, 0, 0, 0.75);  /* dark overlay */
+    background-blend-mode: darken;
+    background-size: contain;              /* or 'cover', see below */
+    background-repeat: no-repeat;
+    background-position: center;
   }
+  
   header {
     margin-left: 2.5rem;
   }
@@ -94,6 +102,14 @@ header p {
 @media (max-width: 880px) {
   .hero {
     background-position: center;
+    /* check below code  only  */
+    background-image: url(/img3.jpg);
+    background-color: rgba(0, 0, 0, 0.75); /* dark overlay */
+    background-blend-mode: darken;
+    background-size: contain;              /* or use 'cover' if needed */
+    background-repeat: no-repeat;
+    background-position: center;
+
   }
   .hero .content .title {
     font-size: 2.45rem;
@@ -105,6 +121,12 @@ header p {
 @media (max-width: 600px) {
   .hero {
     background-position: bottom;
+    background-image: url(/img3.jpg);
+    background-color: rgba(0, 0, 0, 0.75); /* dark overlay */
+    background-blend-mode: darken;
+    background-size: contain;              /* or use 'cover' if needed */
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .hero .content .title {
     font-size: 2.2rem;
@@ -119,6 +141,12 @@ header p {
 @media (max-width: 467px) {
   .hero {
     padding-left: 1rem;
+    background-image: url(/img3.jpg);
+    background-color: rgba(0, 0, 0, 0.75); /* dark overlay */
+    background-blend-mode: darken;
+    background-size: contain;              /* or use 'cover' if needed */
+    background-repeat: no-repeat;
+    background-position: center;
   }
   header {
     margin-left: 1rem;
@@ -602,5 +630,26 @@ footer {
   .bmi .container {
     flex-direction: column-reverse;
     gap: 1px;
+  }
+}
+
+/* ########################### */
+.responsive-video {
+  width: 100%;
+  height: 30%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Optional: Media query to tweak height for smaller screens */
+@media (max-width: 768px) {
+  .responsive-video {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-video {
+    height: 200px;
   }
 }

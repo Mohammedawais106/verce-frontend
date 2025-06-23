@@ -14,9 +14,9 @@ const Video = () => {
     <div>
       <div style={greenBarStyle}></div>
       <div style={videoContainerStyle}>
-        <iframe
+        <iframe className='responsive-video'
           width="750"
-          height="315"
+          height="400"
           src="https://www.youtube.com/embed/4CQUl9IoKiU?si=sbOizxb37yiF63hO"
           title="YouTube video player"
           frameBorder="0"
@@ -25,9 +25,9 @@ const Video = () => {
           allowFullScreen
         ></iframe>
 
-        <iframe
+        <iframe className='responsive-video'
           width="770"
-          height="315"
+          height="400"
           src="https://www.youtube.com/embed/csZxnUNrRIg?si=kJvyPCac-tkSVOuL"
           title="YouTube video player"
           frameBorder="0"
